@@ -1,0 +1,9 @@
+.class
+.war
+.zip
+.rar
+.idea
+/target/*
+/src/main/webapp/WEB-INF/classes/*
+/target/*
+/classes/*
