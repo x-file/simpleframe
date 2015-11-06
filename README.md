@@ -1,2 +1,2 @@
 # simpleframe
-simple and rapid development framework 
+simple and rapid development framework

@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 
-	<groupId>com.sa.cms</groupId>
-	<artifactId>cms</artifactId>
+	<groupId>com.simple.frame</groupId>
+	<artifactId>simpleframe</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<!-- 项目属性 -->
@@ -21,6 +21,9 @@
 		<ehcache-web.version>2.0.4</ehcache-web.version>
 		<shiro.version>1.2.3</shiro.version>
 		<sitemesh.version>2.4.2</sitemesh.version>
+		<apache-ant.version>1.8.2</apache-ant.version>
+		<!-- 判断用户是用的什么设配 -->
+		<user.agen>1.13</user.agen>
 
 		<!-- tools version setting -->
 		<slf4j.version>1.7.7</slf4j.version>
@@ -476,14 +479,22 @@
 		</dependency>
 		<!-- GENERAL UTILS end -->
 
+		<!-- 文件 -->
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>${apache-ant.version}</version>
+		</dependency>
+
+
 
 
 		<!-- TEST begin -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>junit</groupId>-->
+			<!--<artifactId>junit</artifactId>-->
+			<!--<version>4.11</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
@@ -492,11 +503,11 @@
 		<!-- TEST end -->
 
 		<!-- User Agent -->
-		<!--<dependency>-->
-			<!--<groupId>bitwalker</groupId>-->
-			<!--<artifactId>UserAgentUtils</artifactId>-->
-			<!--<version>1.18</version>-->
-		<!--</dependency>hu-->
+		<dependency>
+			<groupId>bitwalker</groupId>
+			<artifactId>UserAgentUtils</artifactId>
+			<version>${user.agen}</version>
+		</dependency>
 
 
 	</dependencies>

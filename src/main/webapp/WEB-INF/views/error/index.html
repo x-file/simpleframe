@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>video</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- 播放器 -->
+    <script type="text/javascript" src="ckplayer/ckplayer.js"></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- left -->
+        <div class="col-xs-2" style="background:#ffffab">
+            <div class="dropdown">
+                <lable>选择景点：</lable>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- main begin-->
+        <div class="col-xs-8" style="height:750px">
+            <!-- video 1/2 row -->
+            <div class="row">
+                <div class="col-xs-6"  style="background:#f0f0f0">
+                    <!-- video1 -->
+                    <div id="video1">
+                        player1
+                    </div>
+                </div>
+                <div class="col-xs-6" style="background:#ffffab">
+                    <!-- video2 -->
+                    <div id="video2">
+                        player2
+                    </div>
+                </div>
+            </div>
+
+            <!-- video 3/4 row -->
+            <div class="row">
+                <div class="col-xs-6"  style="background:#f0f0f0">
+                    <!-- video3 -->
+                    <div id="video3">
+                        player3
+                    </div>
+                </div>
+                <div class="col-xs-6" style="background:#ffffab">
+                    <!-- video4 -->
+                    <div id="video4">
+                        player4
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- main end-->
+        <!-- right -->
+        <div class="col-xs-2" style="background:#f0f0f0">ctrl</div>
+    </div>
+</div>
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    //video1
+    var flashvars={
+        f:'rtmp://218.28.9.82:8088/live/Cam_1',
+        c:0,
+        p:1,
+        b:0,
+        my_url:encodeURIComponent(window.location.href)
+    };
+    var video=[''];
+    CKobject.embed('ckplayer/ckplayer.swf','video1','ckplayer_video1','100%','380',false,flashvars,video);
+
+    //video2
+    var flashvars2={
+        f:'rtmp://218.28.9.82:8088/live/Cam_1',
+        c:0,
+        p:1,
+        b:0,
+        my_url:encodeURIComponent(window.location.href)
+    };
+    //var video2=[''];
+    CKobject.embed('ckplayer/ckplayer.swf','video2','ckplayer_video2','100%','380',false,flashvars2,video);
+
+    //video3
+    var flashvars3={
+        f:'rtmp://218.28.9.82:8088/live/Cam_1',
+        c:0,
+        p:1,
+        b:0,
+        my_url:encodeURIComponent(window.location.href)
+    };
+    //var video3=[''];
+    CKobject.embed('ckplayer/ckplayer.swf','video3','ckplayer_video3','100%','380',false,flashvars3,video);
+
+    //video4
+    var flashvars4={
+        f:'http://movie.ks.js.cn/flv/other/1_0.flv',
+        c:0,
+        p:1,
+        b:0,
+        my_url:encodeURIComponent(window.location.href)
+    };
+    //var video4=[''];
+    CKobject.embed('ckplayer/ckplayer.swf','video4','ckplayer_video4','100%','380',false,flashvars4,video);
+</script>
+
+
+
+</body>
+</html><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>video</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- 播放器 -->
+    <script type="text/javascript" src="ckplayer/ckplayer.js"></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- left -->
+        <div class="col-xs-2" style="background:#ffffab">
+            <div class="dropdown">
+                <lable>选择景点：</lable>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- main begin-->
+        <div class="col-xs-8" style="height:750px">
+            <!-- video 1/2 row -->
+            <div class="row">
+                <div class="col-xs-6"  style="background:#f0f0f0">
+                    <!-- video1 -->
+                    <div id="video1">
+                        player1
+                    </div>
+                </div>
+                <div class="col-xs-6" style="background:#ffffab">
+                    <!-- video2 -->
+                    <div id="video2">
+                        player2
+                    </div>
+                </div>
+            </div>
+
+            <!-- video 3/4 row -->
+            <div class="row">
+                <div class="col-xs-6"  style="background:#f0f0f0">
+                    <!-- video3 -->
+                    <div id="video3">
+                        player3
+                    </div>
+                </div>
+                <div class="col-xs-6" style="background:#ffffab">
+                    <!-- video4 -->
+                    <div id="video4">
+                        player4
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- main end-->
+        <!-- right -->
+        <div class="col-xs-2" style="background:#f0f0f0">ctrl</div>
+    </div>
+</div>
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    //video1
+    var flashvars={
+        f:'rtmp://218.28.9.82:8088/live/Cam_1',
+        c:0,
+        p:1,
+        b:0,
+        my_url:encodeURIComponent(window.location.href)
+    };
+    var video=[''];
+    CKobject.embed('ckplayer/ckplayer.swf','video1','ckplayer_video1','100%','380',false,flashvars,video);
+
+    //video2
+    var flashvars2={
+        f:'rtmp://218.28.9.82:8088/live/Cam_1',
+        c:0,
+        p:1,
+        b:0,
+        my_url:encodeURIComponent(window.location.href)
+    };
+    //var video2=[''];
+    CKobject.embed('ckplayer/ckplayer.swf','video2','ckplayer_video2','100%','380',false,flashvars2,video);
+
+    //video3
+    var flashvars3={
+        f:'rtmp://218.28.9.82:8088/live/Cam_1',
+        c:0,
+        p:1,
+        b:0,
+        my_url:encodeURIComponent(window.location.href)
+    };
+    //var video3=[''];
+    CKobject.embed('ckplayer/ckplayer.swf','video3','ckplayer_video3','100%','380',false,flashvars3,video);
+
+    //video4
+    var flashvars4={
+        f:'http://movie.ks.js.cn/flv/other/1_0.flv',
+        c:0,
+        p:1,
+        b:0,
+        my_url:encodeURIComponent(window.location.href)
+    };
+    //var video4=[''];
+    CKobject.embed('ckplayer/ckplayer.swf','video4','ckplayer_video4','100%','380',false,flashvars4,video);
+</script>
+
+
+
+</body>
+</html>
